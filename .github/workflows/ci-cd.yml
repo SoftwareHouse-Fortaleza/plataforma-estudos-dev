@@ -1,0 +1,51 @@
+name: CI/CD Workflow
+
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+
+      - name: Install dependencies
+        run: npm install
+
+
+      - name: Lint workspaces
+        run: npm run lint
+
+
+      - name: Executar Testes (REQUISITO CLP-9)
+        run: npm test --workspaces --if-present
+
+
+      - name: Build workspaces
+        run: npm run build
+
+
+  deploy:
+    needs: verify # SÓ FAZ DEPLOY SE OS TESTES PASSAREM!
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy automático
+        run: |
+          echo "Iniciando deploy automático..."
+          echo "Simulando envio para o servidor de produção..."
+          echo "Deploy finalizado com sucesso para CLP-9!"
