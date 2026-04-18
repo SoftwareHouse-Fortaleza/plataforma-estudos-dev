@@ -13,3 +13,5 @@ Transformar a teoria da faculdade em prática real, simulando o ambiente de uma 
 ## 👥 Liderança
 - **Architect & Vision:** Cezar Moreira
 - **Tech Lead:** Luan
+
+## Teste do mentor CodeRabbit
