@@ -1,0 +1,21 @@
+{
+  "name": "plataforma-estudos-dev",
+  "version": "1.0.0",
+  "description": "Bem-vindos ao projeto oficial da nossa Software House! Este ecossistema está sendo desenvolvido para organizar trilhas de estudo, compartilhar recursos e fortalecer o portfólio de todos os membros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftwareHouse-Fortaleza/plataforma-estudos-dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SoftwareHouse-Fortaleza/plataforma-estudos-dev/issues"
+  },
+  "homepage": "https://github.com/SoftwareHouse-Fortaleza/plataforma-estudos-dev#readme"
+}
