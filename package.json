@@ -4,8 +4,8 @@
   "description": "Bem-vindos ao projeto oficial da nossa Software House! Este ecossistema está sendo desenvolvido para organizar trilhas de estudo, compartilhar recursos e fortalecer o portfólio de todos os membros.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"No tests yet\" && exit 0"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SoftwareHouse-Fortaleza/plataforma-estudos-dev.git"
@@ -19,3 +19,4 @@
   },
   "homepage": "https://github.com/SoftwareHouse-Fortaleza/plataforma-estudos-dev#readme"
 }
+
